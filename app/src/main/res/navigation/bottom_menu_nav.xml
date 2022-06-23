@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_menu_nav"
+    app:startDestination="@id/mainPageFragment">
+
+    <fragment
+        android:id="@+id/mainPageFragment"
+        android:name="com.aybukefirat.capstoneproject.fragments.MainPageFragment"
+        android:label="fragment_main_page"
+        tools:layout="@layout/fragment_main_page" />
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.aybukefirat.capstoneproject.fragments.ProductFragment"
+        android:label="fragment_product"
+        tools:layout="@layout/fragment_product_detail" />
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.aybukefirat.capstoneproject.fragments.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/shopBagFragment"
+        android:name="com.aybukefirat.capstoneproject.fragments.ShopBagFragment"
+        android:label="fragment_shop_bag"
+        tools:layout="@layout/fragment_shop_bag" >
+        <action
+            android:id="@+id/action_shopBagFragment_to_lastFragment"
+            app:destination="@id/lastFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.aybukefirat.capstoneproject.fragments.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.aybukefirat.capstoneproject.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/lastFragment"
+        android:name="com.aybukefirat.capstoneproject.fragments.LastFragment"
+        android:label="LastFragment" >
+        <action
+            android:id="@+id/action_lastFragment_to_mainPageFragment"
+            app:destination="@id/mainPageFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/acme</item>
+        <item>@font/amiko</item>
+        <item>@font/amita</item>
+        <item>@font/beth_ellen</item>
+        <item>@font/rhodium_libre</item>
+    </array>
+</resources>
